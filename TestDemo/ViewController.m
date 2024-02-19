@@ -44,7 +44,7 @@
 }
 
 - (void)setSecondImageWithoutFade {
-    [self.testView1 sd_setImageWithURL:[[NSBundle mainBundle] URLForResource:@"image2" withExtension:@"JPG"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+    [self.testView1 sd_setImageWithURL:[[NSBundle mainBundle] URLForResource:@"image2" withExtension:@"png"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         NSLog(@"set image 2 complete: cacheType - %@", @(cacheType));
     }];
 }
